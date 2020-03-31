@@ -4,11 +4,27 @@
   left: 2%;
   text-align: center;
 
+  @include respond(tab-land) {
+    top: 5%;
+  }
+
+  @include respond(phone) {
+    top: 3%;
+  }
+
   &__paragraph {
     width: 100%;
     font-size: 2.3rem;
     letter-spacing: 0.7rem;
     text-transform: uppercase;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
   }
 
   &__span {
@@ -16,24 +32,52 @@
     width: 100%;
     font-size: 1.6rem;
     text-transform: lowercase;
+
+    @include respond(tab-land) {
+      font-size: 1.3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
   }
 }
 
 .welcome-message {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
   position: absolute;
   top: 90%;
-  left: 53%;
+  left: 52.5%;
   color: $color-white;
   z-index: 10;
-  transform: translate(-53%, -90%);
+  transform: translate(-52.5%, -90%);
   animation: fadeInWelcome 2s ease-in;
+
+  @include respond(tab-land) {
+    left: 56%;
+    transform: translate(-56%, -90%);
+  }
+  @include respond(tab-port) {
+    left: 53%;
+    transform: translate(-53%, -90%);
+  }
+  @include respond(phone) {
+    top: 95%;
+  }
 
   &__heading {
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 7rem;
+
+    @include respond(tab-land) {
+      font-size: 5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__dot {
@@ -41,7 +85,19 @@
     height: 5rem;
     background-color: $color-primary;
     border-radius: 50%;
-    margin: 0 0 1.7rem 2rem;
+    margin: 0 0 1rem 2rem;
+
+    @include respond(tab-land) {
+      margin: 0 0 0.6rem 2rem;
+    }
+    @include respond(tab-port) {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0 0.5rem 1rem;
+    }
+    @include respond(phone) {
+      margin: 0 0 0.2rem 1rem;
+    }
   }
 }
 
@@ -49,6 +105,10 @@
   position: relative;
   height: 100vh;
   display: flex;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 
   h1 {
     position: absolute;
@@ -64,6 +124,12 @@
   background-color: $color-primary;
   clip-path: polygon(45% 14%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 25%);
 
+  @include respond(phone) {
+    width: 100%;
+    height: 50vh;
+    clip-path: polygon(55% 14%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 30%);
+  }
+
   .social-media {
     position: absolute;
     top: 50%;
@@ -74,12 +140,39 @@
     flex-direction: column;
     justify-content: space-around;
 
+    @include respond(tab-port) {
+      top: 45%;
+      height: 55%;
+    }
+
+    @include respond(phone) {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+    }
+
     &__github {
       width: 10rem;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include respond(tab-port) {
+        width: 7rem;
+      }
     }
 
     &__linkedin {
       width: 10rem;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include respond(tab-port) {
+        width: 7rem;
+      }
     }
   }
 }
@@ -90,6 +183,11 @@
   align-items: center;
   width: 50%;
   background-color: $color-secondary;
+
+  @include respond(phone) {
+    width: 100%;
+    height: 50vh;
+  }
 
   .image-container {
     width: 80%;
