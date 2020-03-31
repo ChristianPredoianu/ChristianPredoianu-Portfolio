@@ -1,0 +1,72 @@
+nav {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  z-index: 20;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  @include respond(phone) {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #10c278;
+    height: 110vh;
+    width: 100%;
+    transform: translateY(-5rem);
+    clip-path: inset(-50% 0 100% 100%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  li {
+    transition: 0.2s ease;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: 0.2s ease;
+  }
+
+  li:hover {
+    transform: translateY(0.6rem) scale(1.2);
+  }
+}
+
+.hamburger {
+  @include respond(phone) {
+    position: absolute;
+    display: block;
+    right: 5%;
+    transform: translate(-5%, -2%);
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  &__line {
+    @include respond(phone) {
+      background: #ffffff;
+      width: 3rem;
+      height: 0.3rem;
+      margin: 0.5rem;
+    }
+  }
+}
+
+.open {
+  clip-path: inset(0 0 0 0);
+  pointer-events: all;
+}
