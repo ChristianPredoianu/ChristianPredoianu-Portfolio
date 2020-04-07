@@ -16,23 +16,6 @@ $breakpoint argument choices
 600px/16px = 37.5em;
 
 */
-@-webkit-keyframes fadeInWelcome {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeInWelcome {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 *,
 *::after,
 *::before {
@@ -49,6 +32,7 @@ html {
 body {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -220,8 +204,6 @@ nav {
   z-index: 10;
   -webkit-transform: translate(-52.5%, -90%);
           transform: translate(-52.5%, -90%);
-  -webkit-animation: fadeInWelcome 2s ease-in;
-          animation: fadeInWelcome 2s ease-in;
 }
 
 @media (max-width: 75em) {
@@ -388,6 +370,7 @@ nav {
   width: 10rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  opacity: 0;
 }
 
 .aside-left .social-media__github:hover {
@@ -405,6 +388,7 @@ nav {
   width: 10rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  opacity: 0;
 }
 
 .aside-left .social-media__linkedin:hover {
