@@ -100,9 +100,17 @@ nav {
   transition: 0.2s ease;
 }
 
-.nav-links li:hover {
+.nav-links a:hover {
+  color: orange;
   -webkit-transform: translateY(0.6rem) scale(1.2);
           transform: translateY(0.6rem) scale(1.2);
+  color: #ffa500;
+}
+
+.nav-links li:hover {
+  -webkit-transform: translateY(0.2rem) scale(1.1);
+          transform: translateY(0.2rem) scale(1.1);
+  color: #ffa500;
 }
 
 @media (max-width: 37.5em) {
@@ -430,5 +438,251 @@ nav {
 .aside-right .image-container__image {
   width: 100%;
   mix-blend-mode: lighten;
+}
+
+.container-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container-projects .primary-heading {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  color: #100f1b;
+  -webkit-transform: translate(-55%, -25%);
+          transform: translate(-55%, -25%);
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 10rem;
+}
+
+.container-projects span {
+  color: #fff;
+}
+
+.javascript-projects {
+  height: 100vh;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: '. . . . . . ' '. . . . . . ' '. . js-heading js-heading . . ' '. swiper swiper swiper swiper . ' '. swiper swiper swiper swiper . ';
+}
+
+.javascript-projects__heading {
+  font-size: 2rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: js-heading;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-decoration: underline;
+}
+
+.javascript-projects .swiper-container {
+  width: 600px;
+  height: 400px;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: swiper;
+}
+
+.javascript-projects .swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.javascript-projects .slide-1 {
+  background-image: url("/assets/images/covid.jpg");
+}
+
+.javascript-projects .slide-2 {
+  background-image: url("/assets/images/music-player.jpg");
+}
+
+.javascript-projects .slide-3 {
+  background-image: url("/assets/images/quiz.jpg");
+}
+
+.javascript-projects .swiper-button-prev {
+  color: #fff;
+}
+
+.javascript-projects .swiper-button-next {
+  color: #fff;
+}
+
+.javascript-projects .slide-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+.javascript-projects .slide-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.javascript-projects .slide-container__heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+
+.javascript-projects .slide-container__heading-secondary {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.javascript-projects .slide-container .list {
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.javascript-projects .slide-container .list__item {
+  margin-top: 1rem;
+}
+
+.javascript-projects .slide-1:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.6);
+}
+
+.javascript-projects .slide-2:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.6);
+}
+
+.javascript-projects .slide-3:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.6);
+}
+
+.html-css-projects {
+  background-color: #100f1b;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: '. . . . . . ' '. . . . . . ' '. . html-heading html-heading . . ' '. swiper swiper swiper swiper . ' '. swiper swiper swiper swiper . ' '. swiper swiper swiper swiper . ';
+}
+
+.html-css-projects__heading {
+  font-size: 2rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: html-heading;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.html-css-projects .swiper-container {
+  width: 600px;
+  height: 400px;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: swiper;
+}
+
+.html-css-projects .swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.html-css-projects .slide-1 {
+  background-image: url("/assets/images/ceramic.jpg");
+}
+
+.html-css-projects .slide-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+.html-css-projects .slide-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.html-css-projects .slide-container__heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+
+.html-css-projects .slide-container__heading-secondary {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.html-css-projects .slide-container .list {
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.html-css-projects .slide-container .list__item {
+  margin-top: 1rem;
+}
+
+.html-css-projects .slide-1:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

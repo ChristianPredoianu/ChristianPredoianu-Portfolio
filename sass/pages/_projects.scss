@@ -1,0 +1,203 @@
+.container-projects {
+  display: flex;
+  position: relative;
+
+  .primary-heading {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    color: $color-secondary;
+    transform: translate(-55%, -25%);
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 10rem;
+  }
+  span {
+    color: $color-white;
+  }
+}
+
+.javascript-projects {
+  height: 100vh;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    '. . . . . . '
+    '. . . . . . '
+    '. . js-heading js-heading . . '
+    '. swiper swiper swiper swiper . '
+    '. swiper swiper swiper swiper . ';
+
+  &__heading {
+    font-size: 2rem;
+    grid-area: js-heading;
+    align-self: center;
+    justify-self: center;
+    text-decoration: underline;
+  }
+
+  .swiper-container {
+    width: 600px;
+    height: 400px;
+    grid-area: swiper;
+  }
+
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slide-1 {
+    background-image: url('/assets/images/covid.jpg');
+  }
+
+  .slide-2 {
+    background-image: url('/assets/images/music-player.jpg');
+  }
+
+  .slide-3 {
+    background-image: url('/assets/images/quiz.jpg');
+  }
+
+  .swiper-button-prev {
+    color: $color-white;
+  }
+
+  .swiper-button-next {
+    color: $color-white;
+  }
+  .slide-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: $color-white;
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    &__heading {
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      cursor: pointer;
+      margin-top: 5rem;
+    }
+
+    &__heading-secondary {
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .list {
+      margin-top: 1rem;
+      list-style: none;
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: center;
+
+      &__item {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .slide-1:hover .slide-container {
+    display: flex;
+    background: rgba($color-secondary, 0.6);
+  }
+
+  .slide-2:hover .slide-container {
+    display: flex;
+    background: rgba($color-secondary, 0.6);
+  }
+
+  .slide-3:hover .slide-container {
+    display: flex;
+    background: rgba($color-secondary, 0.6);
+  }
+}
+
+.html-css-projects {
+  background-color: $color-secondary;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    '. . . . . . '
+    '. . . . . . '
+    '. . html-heading html-heading . . '
+    '. swiper swiper swiper swiper . '
+    '. swiper swiper swiper swiper . '
+    '. swiper swiper swiper swiper . ';
+
+  &__heading {
+    font-size: 2rem;
+    grid-area: html-heading;
+    align-self: center;
+    justify-self: center;
+    text-decoration: underline;
+    color: $color-white;
+  }
+
+  .swiper-container {
+    width: 600px;
+    height: 400px;
+    grid-area: swiper;
+  }
+
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slide-1 {
+    background-image: url('/assets/images/ceramic.jpg');
+  }
+  .slide-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: $color-white;
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    &__heading {
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      cursor: pointer;
+      margin-top: 5rem;
+    }
+
+    &__heading-secondary {
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .list {
+      margin-top: 1rem;
+      list-style: none;
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: center;
+
+      &__item {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .slide-1:hover .slide-container {
+    display: flex;
+    background: rgba($color-secondary, 0.6);
+  }
+}

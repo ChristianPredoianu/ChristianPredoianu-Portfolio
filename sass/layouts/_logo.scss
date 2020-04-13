@@ -1,0 +1,43 @@
+.logo {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  text-align: center;
+
+  @include respond(tab-land) {
+    top: 5%;
+  }
+
+  @include respond(phone) {
+    top: 3%;
+  }
+
+  &__paragraph {
+    width: 100%;
+    font-size: 2.3rem;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  &__span {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    text-transform: lowercase;
+
+    @include respond(tab-land) {
+      font-size: 1.3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+  }
+}

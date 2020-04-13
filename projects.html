@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <title>Christian Predoianu | Projects</title>
+  </head>
+  <body>
+    <div class="logo">
+      <p class="logo__paragraph">
+        Christian Predoianu <span class="logo__span">Front end developer </span>
+      </p>
+    </div>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container-projects">
+      <h1 class="primary-heading">Proj<span>ects</span></h1>
+
+      <section class="javascript-projects">
+        <h2 class="javascript-projects__heading">Javascript projects</h2>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide slide-1">
+              <div class="slide-container">
+                <a href="https://trackcovid19.netlify.com/" target="_blank"
+                  ><h3 class="slide-container__heading">Covid tracker</h3></a
+                >
+                <h4 class="slide-container__heading-secondary">Made with:</h4>
+                <ul class="list">
+                  <li class="list__item">Vanilla Javascript</li>
+                  <li class="list__item">Html5</li>
+                  <li class="list__item">Css3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <div class="slide-container">
+                <a href="https://jsmusicplayer.netlify.com" target="_blank"
+                  ><h3 class="slide-container__heading">Music player</h3></a
+                >
+                <h4 class="slide-container__heading-secondary">Made with:</h4>
+                <ul class="list">
+                  <li class="list__item">Vanilla Javascript</li>
+                  <li class="list__item">Html5</li>
+                  <li class="list__item">Css3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide slide-3">
+              <div class="slide-container">
+                <a href="https://jsmusicplayer.netlify.com" target="_blank"
+                  ><h3 class="slide-container__heading">Quiz game</h3></a
+                >
+                <h4 class="slide-container__heading-secondary">Made with:</h4>
+                <ul class="list">
+                  <li class="list__item">Vanilla Javascript</li>
+                  <li class="list__item">Html5</li>
+                  <li class="list__item">Css3</li>
+                </ul>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="html-css-projects">
+        <h2 class="html-css-projects__heading">Html/css projects</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide slide-1">
+              <div class="slide-container">
+                <a href="https://trackcovid19.netlify.com/" target="_blank"
+                  ><h3 class="slide-container__heading">Restoration Guy</h3></a
+                >
+                <h4 class="slide-container__heading-secondary">Made with:</h4>
+                <ul class="list">
+                  <li class="list__item">Vanilla Javascript (Navbar)</li>
+                  <li class="list__item">Html5</li>
+                  <li class="list__item">Css3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

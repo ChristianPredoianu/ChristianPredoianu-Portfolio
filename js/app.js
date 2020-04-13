@@ -15,7 +15,7 @@ function animationTimeline() {
     stagger: 0.5,
   });
 
-  tl.from('.animated-heading', {
+  /*   tl.from('.animated-heading', {
     rotation: -180,
     y: 200,
     opacity: 0,
@@ -23,7 +23,7 @@ function animationTimeline() {
     duration: 1,
     ease: 'back',
     stagger: 1,
-  });
+  }); */
 
   tl.from('.image-container__image', {
     opacity: 0,
