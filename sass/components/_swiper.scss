@@ -1,0 +1,116 @@
+.swiper-container {
+  height: 100%;
+  width: 100%;
+  grid-area: swiper;
+}
+.swiper-pagination {
+  top: 105%;
+}
+
+.swiper-button-next {
+  right: -50px !important;
+  color: $color-primary !important;
+}
+
+.swiper-button-prev {
+  left: -50px !important;
+  color: $color-primary !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: $color-primary !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-primary !important;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide-1 {
+  background-image: url('/assets/images/adidas-ultra.jpg');
+}
+
+.slide-2 {
+  background-image: url('/assets/images/music-player.jpg');
+}
+
+.slide-3 {
+  background-image: url('/assets/images/covid.jpg');
+}
+
+.slide-4 {
+  background-image: url('/assets/images/quiz.jpg');
+}
+.slide-5 {
+  background-image: url('/assets/images/ceramic.jpg');
+}
+
+.slide-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: $color-white;
+
+  @include respond(tab-land) {
+    display: flex;
+    background: rgba($color-secondary, 0.7);
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    margin-top: 5rem;
+  }
+
+  &__heading-secondary {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .list {
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+
+    &__item {
+      margin-top: 1rem;
+    }
+  }
+
+  &__logo {
+    width: 30%;
+    filter: invert(80%) sepia(66%) saturate(3911%) hue-rotate(9deg)
+      brightness(99%) contrast(102%);
+    margin-top: 3rem;
+  }
+}
+.slide-1:hover .slide-container {
+  @include slide-hover;
+}
+
+.slide-2:hover .slide-container {
+  @include slide-hover;
+}
+
+.slide-3:hover .slide-container {
+  @include slide-hover;
+}
+
+.slide-4:hover .slide-container {
+  @include slide-hover;
+}

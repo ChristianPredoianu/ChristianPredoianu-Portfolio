@@ -1,19 +1,52 @@
+#projects {
+  overflow-y: hidden;
+
+  @include respond(tab-land) {
+    overflow-y: visible;
+  }
+}
+
 .container-projects {
   display: flex;
   position: relative;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
   .primary-heading {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 55%;
+    transform: translate(-55%, -22%);
     color: $color-secondary;
-    transform: translate(-55%, -25%);
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 10rem;
+
+    @include respond(tab-land) {
+      letter-spacing: 7rem;
+      left: 56%;
+    }
+
+    @include respond(tab-port) {
+      letter-spacing: 5rem;
+    }
+
+    @include respond(tab-port) {
+      letter-spacing: 2rem;
+      font-size: 2rem;
+      top: 12%;
+      left: 55%;
+      transform: translate(-55%, -12%);
+    }
   }
   span {
     color: $color-white;
+
+    @include respond(tab-port) {
+      color: $color-secondary;
+    }
   }
 }
 
@@ -22,13 +55,19 @@
   width: 50%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-template-areas:
     '. . . . . . '
     '. . . . . . '
     '. . js-heading js-heading . . '
     '. swiper swiper swiper swiper . '
-    '. swiper swiper swiper swiper . ';
+    '. swiper swiper swiper swiper . '
+    '. swiper swiper swiper swiper . '
+    '. . . . . . ';
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 
   &__heading {
     font-size: 2rem;
@@ -36,104 +75,42 @@
     align-self: center;
     justify-self: center;
     text-decoration: underline;
-  }
+    padding: 5rem 0 5rem 0;
 
-  .swiper-container {
-    width: 600px;
-    height: 400px;
-    grid-area: swiper;
-  }
-
-  .swiper-slide {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .slide-1 {
-    background-image: url('/assets/images/covid.jpg');
-  }
-
-  .slide-2 {
-    background-image: url('/assets/images/music-player.jpg');
-  }
-
-  .slide-3 {
-    background-image: url('/assets/images/quiz.jpg');
-  }
-
-  .swiper-button-prev {
-    color: $color-white;
-  }
-
-  .swiper-button-next {
-    color: $color-white;
-  }
-  .slide-container {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    color: $color-white;
-
-    a {
-      text-decoration: none;
-      color: $color-white;
-    }
-
-    &__heading {
-      font-size: 4rem;
-      text-transform: uppercase;
-      letter-spacing: 1rem;
-      cursor: pointer;
-      margin-top: 5rem;
-    }
-
-    &__heading-secondary {
-      font-size: 2.5rem;
-      margin-top: 3rem;
-    }
-
-    .list {
-      margin-top: 1rem;
-      list-style: none;
-      font-size: 1.5rem;
-      font-style: italic;
+    @include respond(tab-port) {
       text-align: center;
-
-      &__item {
-        margin-top: 1rem;
-      }
     }
-  }
-  .slide-1:hover .slide-container {
-    display: flex;
-    background: rgba($color-secondary, 0.6);
-  }
-
-  .slide-2:hover .slide-container {
-    display: flex;
-    background: rgba($color-secondary, 0.6);
-  }
-
-  .slide-3:hover .slide-container {
-    display: flex;
-    background: rgba($color-secondary, 0.6);
   }
 }
 
 .html-css-projects {
   background-color: $color-secondary;
+  height: 100vh;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-template-areas:
     '. . . . . . '
     '. . . . . . '
     '. . html-heading html-heading . . '
     '. swiper swiper swiper swiper . '
     '. swiper swiper swiper swiper . '
-    '. swiper swiper swiper swiper . ';
+    '. swiper swiper swiper swiper . '
+    '. . . . . . ';
+
+  @include respond(tab-port) {
+    background-color: $color-white;
+    width: 100%;
+    grid-template-areas:
+      '. . html-heading html-heading . . '
+      '. . html-heading html-heading . . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. . . . . . '
+      '. . . . . . ';
+  }
 
   &__heading {
     font-size: 2rem;
@@ -142,62 +119,12 @@
     justify-self: center;
     text-decoration: underline;
     color: $color-white;
-  }
 
-  .swiper-container {
-    width: 600px;
-    height: 400px;
-    grid-area: swiper;
-  }
-
-  .swiper-slide {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .slide-1 {
-    background-image: url('/assets/images/ceramic.jpg');
-  }
-  .slide-container {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    color: $color-white;
-
-    a {
-      text-decoration: none;
-      color: $color-white;
-    }
-
-    &__heading {
-      font-size: 4rem;
-      text-transform: uppercase;
-      letter-spacing: 1rem;
-      cursor: pointer;
-      margin-top: 5rem;
-    }
-
-    &__heading-secondary {
-      font-size: 2.5rem;
-      margin-top: 3rem;
-    }
-
-    .list {
-      margin-top: 1rem;
-      list-style: none;
-      font-size: 1.5rem;
-      font-style: italic;
+    @include respond(tab-port) {
       text-align: center;
-
-      &__item {
-        margin-top: 1rem;
-      }
+      margin-bottom: 5rem;
+      color: $color-secondary;
+      align-self: end;
     }
-  }
-
-  .slide-1:hover .slide-container {
-    display: flex;
-    background: rgba($color-secondary, 0.6);
   }
 }

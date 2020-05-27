@@ -16,7 +16,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     position: fixed;
     flex-direction: column;
     justify-content: space-evenly;
@@ -39,6 +39,14 @@ nav {
     text-decoration: none;
     font-size: 1.8rem;
     transition: 0.2s ease;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.3rem;
+    }
   }
 
   a:hover {
@@ -54,7 +62,7 @@ nav {
 }
 
 .hamburger {
-  @include respond(phone) {
+  @include respond(tab-port) {
     position: absolute;
     display: block;
     right: 5%;
@@ -64,8 +72,8 @@ nav {
   }
 
   &__line {
-    @include respond(phone) {
-      background: #ffffff;
+    @include respond(tab-port) {
+      background: #0b16a8;
       width: 3rem;
       height: 0.3rem;
       margin: 0.5rem;

@@ -1,3 +1,11 @@
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  console.log(navLinks);
+});
+
 //Swiper.js
 //Init swiper
 var swiper = new Swiper('.swiper-container', {
@@ -5,7 +13,7 @@ var swiper = new Swiper('.swiper-container', {
   effect: 'cube',
   grabCursor: true,
   cubeEffect: {
-    shadow: false,
+    shadow: true,
     slideShadows: true,
     loop: true,
     shadowOffset: 20,

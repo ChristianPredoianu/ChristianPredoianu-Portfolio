@@ -1,3 +1,8 @@
+@mixin slide-hover {
+  display: flex;
+  background: rgba($color-secondary, .8);
+}
+
 // MEDIA QUERY MANAGER
 /*
 0-600px:      Phone
