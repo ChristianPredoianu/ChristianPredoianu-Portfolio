@@ -186,6 +186,13 @@ body {
   background: rgba(16, 15, 27, 0.8);
 }
 
+.slide-5:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.8);
+}
+
 nav {
   position: absolute;
   top: 5%;
@@ -756,5 +763,224 @@ nav {
         -ms-grid-row-align: end;
         align-self: end;
   }
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15rem;
+  width: 50%;
+}
+
+.welcome {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 9rem 3rem 2rem 1rem;
+  background-color: #f1f1f1;
+}
+
+.welcome__heading {
+  position: absolute;
+  top: 2.2rem;
+  left: -7.4rem;
+  font-size: 3rem;
+}
+
+.welcome__name {
+  width: 100%;
+  margin-left: 4rem;
+  font-size: 1.8rem;
+}
+
+.welcome__description {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  font-size: 1.3rem;
+}
+
+.welcome__image {
+  position: absolute;
+  bottom: -45%;
+  right: -7rem;
+  width: 30%;
+  border-radius: 80%;
+}
+
+.container-about {
+  margin-top: 12rem;
+  padding: 0 8rem;
+}
+
+.container-about__heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.container-about__paragraph {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+
+.container-about a {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+.technologies {
+  width: 50%;
+  background-color: #100f1b;
+}
+
+.technologies__heading {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 20rem;
+  letter-spacing: 0.8rem;
+}
+
+.container-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+  color: #fff;
+}
+
+.tech-aside-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.tech-aside-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.tech {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 2rem 0;
+}
+
+.tech .fa-html5 {
+  color: #ffa500;
+}
+
+.tech .fa-css3 {
+  color: #0000ff;
+}
+
+.tech .fa-js-square {
+  color: #ffff00;
+}
+
+.tech .fa-vuejs {
+  color: #008000;
+}
+
+.tech .fa-sass {
+  color: #ffc0cb;
+}
+
+.tech .fa-tools {
+  color: #005eff;
+}
+
+.tech .fa-code {
+  color: #5858aa;
+}
+
+.tech .fa-mobile-alt {
+  color: #e7ab82;
+}
+
+.tech .fa-wind {
+  color: #33dbb9;
+}
+
+.tech .fa-figma {
+  color: #ec5b3e;
+}
+
+.tech__typescript {
+  font-size: 3rem;
+  color: #0000ff;
+}
+
+.tech__nuxt {
+  font-size: 2rem;
+  color: #008000;
+}
+
+.tech__paragraph {
+  text-align: start;
+  width: 50%;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
