@@ -1,0 +1,176 @@
+.about-container {
+  display: flex;
+  height: 100vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+  width: 50%;
+}
+
+.welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 9rem 3rem 2rem 1rem;
+  background-color: rgb(241, 241, 241);
+
+  &__heading {
+    position: absolute;
+    top: 2.2rem;
+    left: -7.4rem;
+
+    font-size: 3rem;
+  }
+
+  &__name {
+    width: 100%;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+  }
+
+  &__description {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    font-size: 1.3rem;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -45%;
+    right: -7rem;
+    width: 30%;
+    border-radius: 80%;
+  }
+}
+
+.container-about {
+  margin-top: 12rem;
+  padding: 0 8rem;
+
+  &__heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
+
+.technologies {
+  width: 50%;
+  background-color: $color-secondary;
+
+  &__heading {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 20rem;
+    letter-spacing: 0.8rem;
+  }
+}
+
+.container-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  color: $color-white;
+}
+
+.tech-aside-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.tech-aside-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.tech {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 0 0 2rem 0;
+
+  .fa-html5 {
+    color: #ffa500;
+  }
+
+  .fa-css3 {
+    color: #0000ff;
+  }
+
+  .fa-js-square {
+    color: #ffff00;
+  }
+
+  .fa-vuejs {
+    color: #008000;
+  }
+
+  .fa-sass {
+    color: #ffc0cb;
+  }
+
+  .fa-tools {
+    color: #005eff;
+  }
+
+  .fa-code {
+    color: #5858aa;
+  }
+
+  .fa-mobile-alt {
+    color: #e7ab82;
+  }
+
+  .fa-wind {
+    color: #33dbb9;
+  }
+
+  .fa-figma {
+    color: #ec5b3e;
+  }
+
+  &__typescript {
+    font-size: 3rem;
+    color: #0000ff;
+  }
+
+  &__nuxt {
+    font-size: 2rem;
+    color: #008000;
+  }
+
+  &__paragraph {
+    text-align: start;
+    width: 50%;
+    font-size: 2rem;
+  }
+}
