@@ -18,13 +18,12 @@
   align-items: center;
   width: 50%;
   padding: 9rem 3rem 2rem 1rem;
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
 
   &__heading {
     position: absolute;
     top: 2.2rem;
     left: -7.4rem;
-
     font-size: 3rem;
   }
 
@@ -75,7 +74,7 @@
 
   &__heading {
     width: 100%;
-    color: white;
+    color: $color-white;
     text-align: center;
     font-size: 3rem;
     font-weight: lighter;
@@ -85,37 +84,26 @@
 }
 
 .container-tech {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, row, center, center);
   margin-top: 10rem;
   color: $color-white;
 }
 
 .tech-aside-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, column, center, center);
   width: 50%;
   padding-left: 5rem;
 }
 
 .tech-aside-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(flex, column, space-around, center);
   width: 50%;
   padding-left: 5rem;
 }
 
 .tech {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
+  @include flex(flex, row, space-around, center);
   margin: 0 0 2rem 0;
 
   .fa-html5 {

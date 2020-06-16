@@ -1,6 +1,27 @@
+@mixin flex($flex, $direction, $justify, $align) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 @mixin slide-hover {
   display: flex;
-  background: rgba($color-secondary, .8);
+  background: rgba($color-secondary, 0.8);
+}
+
+@mixin contact-social-media($back-col, $color, $margin-top) {
+  font-size: 10rem;
+  padding: 3rem;
+  transition: 0.1s ease-in;
+  background-color: $back-col;
+  color: $color;
+  margin-top: $margin-top;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 
 // MEDIA QUERY MANAGER

@@ -1,0 +1,67 @@
+.container-contact {
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  &__message {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    transform: translate(-50%, -30%);
+    letter-spacing: 2rem;
+    font-size: 2rem;
+  }
+
+  &__contact- {
+    color: $color-secondary;
+  }
+
+  &__span {
+    color: $color-white;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.aside-left-contact {
+  @include flex(flex, row, space-around, center);
+  height: 100vh;
+  width: 50%;
+  background-color: $color-white;
+
+  &__mail {
+    @include contact-social-media($color-secondary, $color-white, 40rem);
+    box-shadow: -2px 2px 14px -4px rgba($color-secondary, 0.75);
+  }
+  &__linkedin {
+    @include contact-social-media($color-secondary, $color-white, 20rem);
+    box-shadow: -2px 2px 14px -4px rgba($color-secondary, 0.75);
+  }
+}
+
+.aside-right-contact {
+  @include flex(flex, row, space-around, center);
+  height: 100vh;
+  width: 50%;
+  background-color: $color-secondary;
+
+  &__github {
+    @include contact-social-media($color-white, $color-secondary, 20rem);
+    box-shadow: -2px 2px 14px -4px rgba($color-white, 0.75);
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  &__facebook {
+    @include contact-social-media($color-white, $color-secondary, 40rem);
+    box-shadow: -2px 2px 14px -4px rgba($color-white, 0.75);
+  }
+}

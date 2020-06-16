@@ -83,18 +83,22 @@ body {
 }
 
 .slide-2 {
-  background-image: url("/assets/images/music-player.jpg");
+  background-image: url("/assets/images/background.jpg");
 }
 
 .slide-3 {
-  background-image: url("/assets/images/covid.jpg");
+  background-image: url("/assets/images/music-player.jpg");
 }
 
 .slide-4 {
-  background-image: url("/assets/images/quiz.jpg");
+  background-image: url("/assets/images/covid.jpg");
 }
 
 .slide-5 {
+  background-image: url("/assets/images/quiz.jpg");
+}
+
+.slide-6 {
   background-image: url("/assets/images/ceramic.jpg");
 }
 
@@ -130,13 +134,19 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
+  margin-top: 3rem;
+}
+
+.slide-container__link {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #ffa500;
   cursor: pointer;
-  margin-top: 5rem;
 }
 
 .slide-container__heading-secondary {
   font-size: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .slide-container .list {
@@ -193,10 +203,21 @@ body {
   background: rgba(16, 15, 27, 0.8);
 }
 
+.slide-6:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.8);
+}
+
 nav {
   position: absolute;
   top: 5%;
   width: 100%;
+  z-index: 20;
+}
+
+.logo {
   z-index: 20;
 }
 
@@ -477,15 +498,6 @@ nav {
 
 .aside-left {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 50%;
   background-color: #ffa500;
   -webkit-clip-path: polygon(45% 14%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 25%);
@@ -581,6 +593,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -858,7 +874,7 @@ nav {
 
 .technologies__heading {
   width: 100%;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 3rem;
   font-weight: lighter;
@@ -870,6 +886,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -920,11 +940,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin: 0 0 2rem 0;
 }
 
@@ -982,5 +1006,156 @@ nav {
   text-align: start;
   width: 50%;
   font-size: 2rem;
+}
+
+.container-contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.container-contact__message {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  letter-spacing: 2rem;
+  font-size: 2rem;
+}
+
+.container-contact__contact- {
+  color: #100f1b;
+}
+
+.container-contact__span {
+  color: #fff;
+}
+
+.container-contact a {
+  color: inherit;
+}
+
+.aside-left-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 50%;
+  background-color: #fff;
+}
+
+.aside-left-contact__mail {
+  font-size: 10rem;
+  padding: 3rem;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  background-color: #100f1b;
+  color: #fff;
+  margin-top: 40rem;
+  -webkit-box-shadow: -2px 2px 14px -4px rgba(16, 15, 27, 0.75);
+          box-shadow: -2px 2px 14px -4px rgba(16, 15, 27, 0.75);
+}
+
+.aside-left-contact__mail:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.aside-left-contact__linkedin {
+  font-size: 10rem;
+  padding: 3rem;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  background-color: #100f1b;
+  color: #fff;
+  margin-top: 20rem;
+  -webkit-box-shadow: -2px 2px 14px -4px rgba(16, 15, 27, 0.75);
+          box-shadow: -2px 2px 14px -4px rgba(16, 15, 27, 0.75);
+}
+
+.aside-left-contact__linkedin:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.aside-right-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 50%;
+  background-color: #100f1b;
+}
+
+.aside-right-contact__github {
+  font-size: 10rem;
+  padding: 3rem;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  background-color: #fff;
+  color: #100f1b;
+  margin-top: 20rem;
+  -webkit-box-shadow: -2px 2px 14px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: -2px 2px 14px -4px rgba(255, 255, 255, 0.75);
+}
+
+.aside-right-contact__github:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.aside-right-contact__github:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.aside-right-contact__facebook {
+  font-size: 10rem;
+  padding: 3rem;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  background-color: #fff;
+  color: #100f1b;
+  margin-top: 40rem;
+  -webkit-box-shadow: -2px 2px 14px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: -2px 2px 14px -4px rgba(255, 255, 255, 0.75);
+}
+
+.aside-right-contact__facebook:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

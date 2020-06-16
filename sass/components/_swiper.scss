@@ -35,17 +35,20 @@
 }
 
 .slide-2 {
-  background-image: url('/assets/images/music-player.jpg');
+  background-image: url('/assets/images/background.jpg');
 }
 
 .slide-3 {
-  background-image: url('/assets/images/covid.jpg');
+  background-image: url('/assets/images/music-player.jpg');
 }
 
 .slide-4 {
-  background-image: url('/assets/images/quiz.jpg');
+  background-image: url('/assets/images/covid.jpg');
 }
 .slide-5 {
+  background-image: url('/assets/images/quiz.jpg');
+}
+.slide-6 {
   background-image: url('/assets/images/ceramic.jpg');
 }
 
@@ -71,13 +74,19 @@
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    margin-top: 3rem;
+  }
+
+  &__link {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: $color-primary;
     cursor: pointer;
-    margin-top: 5rem;
   }
 
   &__heading-secondary {
     font-size: 2.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .list {
@@ -115,5 +124,8 @@
   @include slide-hover;
 }
 .slide-5:hover .slide-container {
+  @include slide-hover;
+}
+.slide-6:hover .slide-container {
   @include slide-hover;
 }
