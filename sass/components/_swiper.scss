@@ -2,6 +2,18 @@
   height: 100%;
   width: 100%;
   grid-area: swiper;
+
+  @include respond(tab-land) {
+    height: 40rem;
+  }
+
+  @include respond(tab-port) {
+    height: 100%;
+  }
+
+  @include respond(phone) {
+    height: 25rem;
+  }
 }
 .swiper-pagination {
   top: 105%;
@@ -53,15 +65,21 @@
 }
 
 .slide-container {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
   color: $color-white;
+  padding: 10rem 0;
+  background: rgba($color-secondary, 0.7);
 
-  @include respond(tab-land) {
-    display: flex;
-    background: rgba($color-secondary, 0.7);
+  @include respond(big-desktop) {
+    display: none;
+  }
+
+  @include respond(tab-port) {
+    padding: 7rem 0;
   }
 
   a {
@@ -71,10 +89,28 @@
   }
 
   &__heading {
-    font-size: 4rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
     margin-top: 3rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+      letter-spacing: 0.5rem;
+      font-size: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+      padding: 0 2rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      letter-spacing: 0.5rem;
+    }
   }
 
   &__link {
@@ -82,11 +118,39 @@
     margin-top: 2rem;
     color: $color-primary;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
   }
 
   &__heading-secondary {
     font-size: 2.5rem;
     margin-top: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
   }
 
   .list {
@@ -96,8 +160,25 @@
     font-style: italic;
     text-align: center;
 
+    @include respond(tab-land) {
+      margin-bottom: 0.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
     &__item {
       margin-top: 1rem;
+
+      @include respond(phone) {
+        margin-top: 0.5rem;
+      }
     }
   }
 
@@ -106,6 +187,21 @@
     filter: invert(80%) sepia(66%) saturate(3911%) hue-rotate(9deg)
       brightness(99%) contrast(102%);
     margin-top: 3rem;
+
+    @include respond(tab-land) {
+      margin-top: 2rem;
+      width: 25%;
+    }
+
+    @include respond(tab-port) {
+      width: 50%;
+      margin-top: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 20%;
+      margin-top: 1.5rem;
+    }
   }
 }
 .slide-1:hover .slide-container {

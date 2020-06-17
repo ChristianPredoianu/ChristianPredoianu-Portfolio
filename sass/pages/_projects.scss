@@ -1,8 +1,8 @@
-#projects {
-  overflow-y: hidden;
+.projects {
+  overflow: hidden;
 
-  @include respond(tab-land) {
-    overflow-y: visible;
+  @include respond(tab-port) {
+    overflow: scroll;
   }
 }
 
@@ -30,15 +30,17 @@
     }
 
     @include respond(tab-port) {
-      letter-spacing: 5rem;
+      letter-spacing: 3rem;
+      font-size: 3rem;
+      top: 8%;
+      left: 55%;
+      transform: translate(-55%, -8%);
     }
 
-    @include respond(tab-port) {
-      letter-spacing: 2rem;
-      font-size: 2rem;
-      top: 12%;
-      left: 55%;
-      transform: translate(-55%, -12%);
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      top: 13%;
+      transform: translate(-55%, -13%);
     }
   }
   span {
@@ -67,6 +69,25 @@
 
   @include respond(tab-port) {
     width: 100%;
+    height: auto;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      '. . . . . . '
+      '. . js-heading js-heading . . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . ';
+  }
+
+  @include respond(phone) {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      '. . . . . .'
+      '. . . . . .'
+      '. . js-heading js-heading . . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. . . . . .';
   }
 
   &__heading {
@@ -75,10 +96,10 @@
     align-self: center;
     justify-self: center;
     text-decoration: underline;
-    padding: 5rem 0 5rem 0;
 
     @include respond(tab-port) {
       text-align: center;
+      align-self: center;
     }
   }
 }
@@ -102,14 +123,24 @@
   @include respond(tab-port) {
     background-color: $color-white;
     width: 100%;
+    height: auto;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       '. . html-heading html-heading . . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. swiper swiper swiper swiper . '
+      '. . . . . . ';
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
       '. . html-heading html-heading . . '
       '. swiper swiper swiper swiper . '
       '. swiper swiper swiper swiper . '
-      '. swiper swiper swiper swiper . '
-      '. . . . . . '
-      '. . . . . . ';
+      '. . . . . .';
   }
 
   &__heading {
@@ -122,9 +153,7 @@
 
     @include respond(tab-port) {
       text-align: center;
-      margin-bottom: 5rem;
       color: $color-secondary;
-      align-self: end;
     }
   }
 }

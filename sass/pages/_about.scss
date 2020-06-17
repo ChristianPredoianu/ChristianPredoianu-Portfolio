@@ -1,14 +1,26 @@
 .about-container {
   display: flex;
   height: 100vh;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15rem;
+  margin: 12rem 0;
   width: 50%;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    margin: 12rem 0 0 0;
+  }
 }
 
 .welcome {
@@ -20,23 +32,45 @@
   padding: 9rem 3rem 2rem 1rem;
   background-color: #f1f1f1;
 
+  @include respond(phone) {
+    width: 70%;
+  }
+
   &__heading {
     position: absolute;
     top: 2.2rem;
     left: -7.4rem;
     font-size: 3rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      top: 3.5rem;
+      left: -4.5rem;
+    }
   }
 
   &__name {
     width: 100%;
     margin-left: 4rem;
     font-size: 1.8rem;
+
+    @include respond(phone) {
+      margin-top: -2rem;
+    }
   }
 
   &__description {
-    margin-top: 2rem;
-    margin-left: 10rem;
+    margin: 2rem 0 0 10rem;
     font-size: 1.3rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      text-align: end;
+      margin: 1rem 0;
+    }
   }
 
   &__image {
@@ -45,6 +79,11 @@
     right: -7rem;
     width: 30%;
     border-radius: 80%;
+
+    @include respond(tab-land) {
+      top: 13rem;
+      right: -5rem;
+    }
   }
 }
 
@@ -52,14 +91,37 @@
   margin-top: 12rem;
   padding: 0 8rem;
 
+  @include respond(phone) {
+    padding: 0 3rem;
+  }
+
   &__heading {
     font-size: 4rem;
     margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
   }
 
   &__paragraph {
-    font-size: 2.5rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+
+    @include respond(big-desktop) {
+      font-size: 2.7rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   a {
@@ -72,6 +134,16 @@
   width: 50%;
   background-color: $color-secondary;
 
+  @include respond(tab-port) {
+    margin-top: 10rem;
+    padding-bottom: 20rem;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    padding-bottom: 10rem;
+  }
+
   &__heading {
     width: 100%;
     color: $color-white;
@@ -80,6 +152,11 @@
     font-weight: lighter;
     margin-top: 20rem;
     letter-spacing: 0.8rem;
+
+    @include respond(phone) {
+      margin-top: 10rem;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -87,24 +164,30 @@
   @include flex(flex, row, center, center);
   margin-top: 10rem;
   color: $color-white;
+
+  @include respond(tab-land) {
+    padding: 0 3rem;
+  }
 }
 
 .tech-aside-left {
   @include flex(flex, column, center, center);
   width: 50%;
-  padding-left: 5rem;
 }
 
 .tech-aside-right {
-  @include flex(flex, column, space-around, center);
+  @include flex(flex, column, center, center);
   width: 50%;
-  padding-left: 5rem;
 }
 
 .tech {
-  width: 100%;
+  width: 60%;
   @include flex(flex, row, space-around, center);
   margin: 0 0 2rem 0;
+
+  @include respond(tab-land) {
+    width: 70%;
+  }
 
   .fa-html5 {
     color: #ffa500;
@@ -159,6 +242,10 @@
   &__paragraph {
     text-align: start;
     width: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @include respond(tab-land) {
+      font-size: 1.3rem;
+    }
   }
 }
