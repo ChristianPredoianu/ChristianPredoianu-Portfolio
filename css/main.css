@@ -27,13 +27,11 @@ $breakpoint argument choices
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
 }
 
 body {
   position: relative;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
