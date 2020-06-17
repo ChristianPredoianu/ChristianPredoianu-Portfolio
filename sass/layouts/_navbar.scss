@@ -70,9 +70,12 @@ nav {
     position: absolute;
     display: block;
     right: 5%;
-    transform: translate(-5%, -2%);
     z-index: 20;
     cursor: pointer;
+  }
+
+  @include respond(phone) {
+    top: 55%;
   }
 
   &__line {

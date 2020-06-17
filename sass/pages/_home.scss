@@ -1,6 +1,15 @@
+body {
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: scroll;
+  }
+}
+
 .welcome-message {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   position: absolute;
   top: 90%;
   left: 52.5%;
@@ -9,15 +18,16 @@
   transform: translate(-52.5%, -90%);
 
   @include respond(tab-land) {
-    left: 56%;
-    transform: translate(-56%, -90%);
+    left: 55%;
+    transform: translate(-55%, -90%);
   }
   @include respond(tab-port) {
-    left: 53%;
-    transform: translate(-53%, -90%);
+    left: 54%;
+    transform: translate(-54%, -90%);
   }
   @include respond(phone) {
-    top: 95%;
+    top: 45%;
+    width: 50%;
   }
 
   &__heading {
@@ -52,6 +62,7 @@
     }
     @include respond(phone) {
       margin: 0 0 0.2rem 1rem;
+      background-color: $color-secondary;
     }
   }
 }
@@ -62,6 +73,7 @@
   display: flex;
 
   @include respond(phone) {
+    height: auto;
     flex-direction: column;
   }
 
@@ -78,8 +90,8 @@
 
   @include respond(phone) {
     width: 100%;
-    height: 50vh;
-    clip-path: polygon(55% 18%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 40%);
+    height: 100vh;
+    clip-path: polygon(15% 17%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0% 20%);
   }
 
   .social-media {
@@ -107,8 +119,7 @@
 
     &__github {
       width: 10rem;
-      transition: 0.2s;
-      opacity: 0;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -119,8 +130,7 @@
 
     &__linkedin {
       width: 10rem;
-      transition: 0.2s;
-      opacity: 0;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -138,11 +148,16 @@
 
   @include respond(phone) {
     width: 100%;
-    height: 50vh;
+    height: auto;
+    padding: 5rem 0;
   }
 
   .image-container {
     width: 80%;
+
+    @include respond(phone) {
+      margin-top: 5rem;
+    }
 
     &__image {
       width: 100%;
