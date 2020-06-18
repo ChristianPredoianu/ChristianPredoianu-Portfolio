@@ -1113,8 +1113,8 @@ body {
 
 @media (max-width: 75em) {
   .welcome__image {
-    top: 13rem;
-    right: -5rem;
+    top: 12rem;
+    right: -4rem;
   }
 }
 
