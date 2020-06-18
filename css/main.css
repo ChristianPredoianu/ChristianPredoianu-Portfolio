@@ -891,8 +891,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
       grid-template-areas: '. . . . . .' '. . . . . .' '. . js-heading js-heading . .' '. swiper swiper swiper swiper .' '. swiper swiper swiper swiper .' '. swiper swiper swiper swiper .' '. . . . . .';
 }
 
@@ -1152,7 +1152,7 @@ body {
 
 @media (max-width: 75em) {
   .container-about__paragraph {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 
