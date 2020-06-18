@@ -14,6 +14,7 @@ nav {
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  margin-top: -2.5rem;
 
   @include respond(tab-port) {
     position: fixed;

@@ -363,6 +363,7 @@ nav {
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  margin-top: -2.5rem;
 }
 
 @media (max-width: 56.25em) {
