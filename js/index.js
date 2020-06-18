@@ -3,7 +3,6 @@ const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
-  console.log(navLinks);
 });
 
 function animationTimeline() {
@@ -26,7 +25,6 @@ function animationTimeline() {
 
     tl.from('.animated-heading', {
       opacity: 0,
-
       y: 250,
       scale: 0.1,
       duration: 1,

@@ -3,6 +3,10 @@
   display: flex;
   height: 100vh;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__message {
     position: absolute;
     top: 30%;
@@ -13,6 +17,20 @@
     transform: translate(-50%, -30%);
     letter-spacing: 2rem;
     font-size: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.9rem;
+    }
+
+    @include respond(tab-port) {
+      letter-spacing: 0.6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      top: 24%;
+    }
   }
 
   &__contact- {
@@ -21,6 +39,10 @@
 
   &__span {
     color: $color-white;
+
+    @include respond(phone) {
+      color: $color-secondary;
+    }
   }
 
   a {
@@ -37,10 +59,36 @@
   &__mail {
     @include contact-social-media($color-secondary, $color-white, 40rem);
     box-shadow: -2px 2px 14px -4px rgba($color-secondary, 0.75);
+
+    @include respond(tab-port) {
+      font-size: 5rem;
+      margin-top: 15rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 30rem;
+      font-size: 6rem;
+    }
   }
   &__linkedin {
     @include contact-social-media($color-secondary, $color-white, 20rem);
     box-shadow: -2px 2px 14px -4px rgba($color-secondary, 0.75);
+
+    @include respond(tab-port) {
+      font-size: 7rem;
+      margin-top: 15rem;
+    }
+
+    @include respond(phone) {
+      margin: 15rem;
+      font-size: 6rem;
+    }
+  }
+
+  @include respond(phone) {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -54,6 +102,15 @@
     @include contact-social-media($color-white, $color-secondary, 20rem);
     box-shadow: -2px 2px 14px -4px rgba($color-white, 0.75);
 
+    @include respond(tab-port) {
+      font-size: 7rem;
+      margin-top: 15rem;
+    }
+
+    @include respond(phone) {
+      font-size: 6rem;
+    }
+
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
@@ -63,5 +120,20 @@
   &__facebook {
     @include contact-social-media($color-white, $color-secondary, 40rem);
     box-shadow: -2px 2px 14px -4px rgba($color-white, 0.75);
+
+    @include respond(tab-port) {
+      font-size: 5rem;
+      margin-top: 15rem;
+    }
+
+    @include respond(phone) {
+      font-size: 6rem;
+      margin-bottom: 15rem;
+    }
+  }
+  @include respond(phone) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
   }
 }
