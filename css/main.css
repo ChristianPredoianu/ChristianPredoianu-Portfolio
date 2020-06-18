@@ -27,11 +27,13 @@ $breakpoint argument choices
 
 html {
   font-size: 62.5%;
+  overflow: hidden;
 }
 
 body {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -806,14 +808,6 @@ body {
 .aside-right .image-container__image {
   width: 100%;
   mix-blend-mode: lighten;
-}
-
-.projects {
-  overflow: hidden;
-}
-
-.projects-body {
-  overflow-x: hidden;
 }
 
 .container-projects {
