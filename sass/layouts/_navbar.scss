@@ -10,7 +10,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  height: 100vh;
   margin-left: auto;
   list-style: none;
   text-transform: uppercase;
@@ -23,7 +22,7 @@ nav {
     background: #080e29;
     height: 103vh;
     width: 100%;
-    transform: translateY(-5rem);
+    transform: translateY(-5.2rem);
     clip-path: inset(-20% 50% 100% 100%);
     transition: all 1s ease-out;
     pointer-events: none;

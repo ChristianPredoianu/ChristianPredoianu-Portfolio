@@ -108,7 +108,7 @@ body {
 }
 
 .slide-4 {
-  background-image: url("/assets/images/covid.jpg");
+  background-image: url("/assets/images/quiz.jpg");
 }
 
 .slide-5 {
@@ -365,7 +365,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  height: 100vh;
   margin-left: auto;
   list-style: none;
   text-transform: uppercase;
@@ -385,8 +384,8 @@ nav {
     background: #080e29;
     height: 103vh;
     width: 100%;
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
+    -webkit-transform: translateY(-5.2rem);
+            transform: translateY(-5.2rem);
     -webkit-clip-path: inset(-20% 50% 100% 100%);
             clip-path: inset(-20% 50% 100% 100%);
     -webkit-transition: all 1s ease-out;
