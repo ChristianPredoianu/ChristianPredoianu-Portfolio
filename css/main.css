@@ -813,10 +813,8 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 56.25em) {
-  .projects {
-    overflow: scroll;
-  }
+.projects-body {
+  overflow-x: hidden;
 }
 
 .container-projects {

@@ -1,9 +1,9 @@
 .projects {
   overflow: hidden;
+}
 
-  @include respond(tab-port) {
-    overflow: scroll;
-  }
+.projects-body {
+  overflow-x: hidden;
 }
 
 .container-projects {
