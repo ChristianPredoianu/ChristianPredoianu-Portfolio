@@ -1,11 +1,7 @@
 .swiper-container {
-  height: 100%;
+  min-height: 40rem;
   width: 100%;
   grid-area: swiper;
-
-  @include respond(tab-land) {
-    height: 40rem;
-  }
 
   @include respond(tab-port) {
     height: 100%;
@@ -69,9 +65,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  min-height: 100%;
   color: $color-white;
-  padding: 10rem 0;
+
   background: rgba($color-secondary, 0.7);
 
   @include respond(big-desktop) {

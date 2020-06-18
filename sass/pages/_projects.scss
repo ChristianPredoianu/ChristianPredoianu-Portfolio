@@ -121,7 +121,6 @@
     '. . . . . . ';
 
   @include respond(tab-port) {
-    background-color: $color-white;
     width: 100%;
     height: auto;
     grid-template-rows: repeat(5, 1fr);

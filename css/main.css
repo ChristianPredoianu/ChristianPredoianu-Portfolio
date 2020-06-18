@@ -40,19 +40,13 @@ body {
 }
 
 .swiper-container {
-  height: 100%;
+  min-height: 40rem;
   width: 100%;
   -ms-grid-row: 4;
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: swiper;
-}
-
-@media (max-width: 75em) {
-  .swiper-container {
-    height: 40rem;
-  }
 }
 
 @media (max-width: 56.25em) {
@@ -133,9 +127,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  min-height: 100%;
   color: #fff;
-  padding: 10rem 0;
   background: rgba(16, 15, 27, 0.7);
 }
 
@@ -959,7 +952,6 @@ body {
 
 @media (max-width: 56.25em) {
   .html-css-projects {
-    background-color: #fff;
     width: 100%;
     height: auto;
     -ms-grid-rows: (1fr)[5];
