@@ -5,16 +5,12 @@ nav {
   z-index: 20;
 }
 
-.logo {
-  z-index: 20;
-}
-
 .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   margin-left: auto;
   list-style: none;
   text-transform: uppercase;
@@ -25,13 +21,17 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     background: #080e29;
-    height: 120vh;
+    height: 103vh;
     width: 100%;
     transform: translateY(-5rem);
-    clip-path: inset(-50% 0 100% 100%);
+    clip-path: inset(-20% 50% 100% 100%);
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 5;
+  }
+
+  @include respond(phone) {
+    height: 111vh;
   }
 
   li {
@@ -67,7 +67,7 @@ nav {
 
 .hamburger {
   @include respond(tab-port) {
-    position: absolute;
+    position: fixed;
     display: block;
     right: 5%;
     z-index: 20;
@@ -75,7 +75,7 @@ nav {
   }
 
   @include respond(phone) {
-    top: 55%;
+    top: 5%;
   }
 
   &__line {

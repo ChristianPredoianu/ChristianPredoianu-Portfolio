@@ -3,6 +3,7 @@
   top: 4%;
   left: 2%;
   text-align: center;
+  z-index: 10;
 
   @include respond(tab-land) {
     top: 4%;
@@ -22,9 +23,14 @@
     @include respond(tab-land) {
       font-size: 1.5rem;
     }
+
     @include respond(tab-port) {
       font-size: 1.5rem;
       letter-spacing: 0.2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.2rem;
     }
   }
 
