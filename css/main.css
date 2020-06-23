@@ -121,6 +121,10 @@ body {
   background-image: url("/assets/images/ceramic.jpg");
 }
 
+.slide-7 {
+  background-image: url("/assets/images/porsche.jpg");
+}
+
 .slide-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +347,13 @@ body {
 }
 
 .slide-6:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.8);
+}
+
+.slide-7:hover .slide-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

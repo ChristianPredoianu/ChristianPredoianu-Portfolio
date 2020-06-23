@@ -63,6 +63,9 @@
 .slide-6 {
   background-image: url('/assets/images/ceramic.jpg');
 }
+.slide-7 {
+  background-image: url('/assets/images/porsche.jpg');
+}
 
 .slide-container {
   @include flex(flex, column, center, center);
@@ -219,5 +222,8 @@
   @include slide-hover;
 }
 .slide-6:hover .slide-container {
+  @include slide-hover;
+}
+.slide-7:hover .slide-container {
   @include slide-hover;
 }
