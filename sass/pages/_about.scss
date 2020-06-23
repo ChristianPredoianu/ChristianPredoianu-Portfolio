@@ -14,11 +14,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 12rem 0;
+  margin: 15rem 0;
   width: 50%;
-  height: 100%;
+  height: inherit;
+
+  @include respond(tab-land) {
+    height: 100vh;
+  }
 
   @include respond(tab-port) {
+    height: auto;
     width: 100%;
   }
 
@@ -60,6 +65,7 @@
 
     @include respond(phone) {
       margin-top: -2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -71,8 +77,13 @@
       width: 100%;
     }
 
+    @include respond(tab-port) {
+      margin: 2rem 0 0 28rem;
+    }
+
     @include respond(phone) {
       text-align: end;
+      font-size: 1.2rem;
       margin: 1rem 0;
     }
   }
@@ -92,16 +103,21 @@
 }
 
 .container-about {
-  margin-top: 12rem;
+  margin-top: 20rem;
   padding: 0 8rem;
 
   @include respond(phone) {
+    margin: 12rem 0 0 0;
     padding: 0 3rem;
   }
 
   &__heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
+
+    @include respond(4k) {
+      font-size: 6.5rem;
+    }
 
     @include respond(tab-land) {
       font-size: 3rem;
@@ -136,16 +152,15 @@
 
 .technologies {
   width: 50%;
-
   background-color: $color-secondary;
 
   @include respond(tab-port) {
-    margin-top: 10rem;
     padding-bottom: 20rem;
     width: 100%;
   }
 
   @include respond(phone) {
+    margin-top: 10rem;
     padding-bottom: 10rem;
   }
 
@@ -241,7 +256,7 @@
   }
 
   &__nuxt {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #008000;
   }
 

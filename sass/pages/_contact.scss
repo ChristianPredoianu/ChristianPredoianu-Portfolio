@@ -70,6 +70,7 @@
       font-size: 6rem;
     }
   }
+
   &__linkedin {
     @include contact-social-media($color-secondary, $color-white, 20rem);
     box-shadow: -2px 2px 14px -4px rgba($color-secondary, 0.75);
