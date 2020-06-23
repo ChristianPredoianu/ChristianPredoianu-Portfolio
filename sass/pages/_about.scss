@@ -1,6 +1,9 @@
+.about-body {
+  overflow-y: visible;
+}
+
 .about-container {
   display: flex;
-  height: 100vh;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -13,6 +16,7 @@
   align-items: center;
   margin: 12rem 0;
   width: 50%;
+  height: 100%;
 
   @include respond(tab-port) {
     width: 100%;
@@ -43,9 +47,9 @@
     font-size: 3rem;
 
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 1.8rem;
       top: 3.5rem;
-      left: -4.9rem;
+      left: -4.5rem;
     }
   }
 
@@ -112,7 +116,7 @@
     }
 
     @include respond(tab-land) {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
     @include respond(tab-port) {
@@ -132,6 +136,7 @@
 
 .technologies {
   width: 50%;
+
   background-color: $color-secondary;
 
   @include respond(tab-port) {
@@ -150,12 +155,13 @@
     text-align: center;
     font-size: 3rem;
     font-weight: lighter;
-    margin-top: 20rem;
+    margin-top: 25rem;
     letter-spacing: 0.8rem;
 
     @include respond(phone) {
       margin-top: 10rem;
       font-size: 2rem;
+      letter-spacing: 0.5rem;
     }
   }
 }

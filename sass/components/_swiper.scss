@@ -3,6 +3,10 @@
   width: 100%;
   grid-area: swiper;
 
+  @include respond(tab-land) {
+    min-height: 35rem;
+  }
+
   @include respond(tab-port) {
     height: 100%;
   }

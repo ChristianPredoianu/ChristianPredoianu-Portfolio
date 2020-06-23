@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Front end portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianPredoianu/ChristianPredoianu-Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Christian Predoianu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianPredoianu/ChristianPredoianu-Portfolio/issues"
+  },
+  "homepage": "https://github.com/ChristianPredoianu/ChristianPredoianu-Portfolio#readme",
+  "dependencies": {
+    "swiper": "^5.4.5"
+  }
+}

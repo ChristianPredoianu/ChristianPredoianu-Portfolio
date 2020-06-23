@@ -61,7 +61,7 @@
   grid-template-areas:
     '. . . . . .'
     '. . . . . .'
-    '. . js-heading js-heading . .'
+    '. js-heading js-heading js-heading js-heading .'
     '. swiper swiper swiper swiper .'
     '. swiper swiper swiper swiper .'
     '. swiper swiper swiper swiper .'
@@ -70,13 +70,14 @@
   @include respond(tab-port) {
     width: 100%;
     height: auto;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       '. . . . . . '
       '. . js-heading js-heading . .'
       '. swiper swiper swiper swiper .'
       '. swiper swiper swiper swiper .'
-      '. swiper swiper swiper swiper .';
+      '. swiper swiper swiper swiper .'
+      '. . . . . . ';
   }
 
   @include respond(phone) {
