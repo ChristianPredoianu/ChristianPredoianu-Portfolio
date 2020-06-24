@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-function animationTimeline() {
+/* function animationTimeline() {
   const tl = gsap.timeline();
 
   let hasPlayed = sessionStorage.getItem('hasAnimationPlayed');
@@ -46,3 +46,4 @@ function animationTimeline() {
 }
 
 animationTimeline();
+ */
