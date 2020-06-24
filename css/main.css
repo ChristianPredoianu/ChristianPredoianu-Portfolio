@@ -33,7 +33,7 @@ html {
 
 body {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -991,6 +991,7 @@ body {
   .html-css-projects {
     width: 100%;
     height: auto;
+    background-color: #fff;
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: '. . html-heading html-heading . .' '. swiper swiper swiper swiper .' '. swiper swiper swiper swiper .' '. swiper swiper swiper swiper .' '. . . . . .';

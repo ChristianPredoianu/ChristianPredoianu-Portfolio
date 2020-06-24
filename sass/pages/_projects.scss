@@ -123,6 +123,7 @@
   @include respond(tab-port) {
     width: 100%;
     height: auto;
+    background-color: $color-white;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       '. . html-heading html-heading . .'

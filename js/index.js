@@ -12,12 +12,13 @@ function animationTimeline() {
 
   if (!hasPlayed) {
     tl.from('.animated-social-media', {
-      opacity: 0,
-      duration: 1,
-      stagger: 0.5,
-      x: 50,
-      y: -50,
-      ease: 'sine',
+      scale: 1.5,
+      rotate: 360,
+      opacity: 1,
+      duration: 2,
+      stagger: 1,
+
+      ease: 'elastic',
       onComplete: function () {
         sessionStorage.setItem('hasAnimationPlayed', true);
       },
@@ -27,15 +28,15 @@ function animationTimeline() {
       opacity: 0,
       y: 250,
       scale: 0.1,
-      duration: 1,
-      stagger: 1,
+      duration: 0.5,
+      stagger: 0.5,
       ease: 'back',
     });
 
     tl.from('.image-container__image', {
       opacity: 0,
       duration: 1.5,
-      rotation: 80,
+      rotation: 20,
       scale: 1.8,
       x: 20,
       y: -50,
