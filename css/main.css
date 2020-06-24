@@ -543,13 +543,12 @@ nav {
   }
 }
 
-/* body {
-  overflow: hidden;
-
-  @include respond(tab-port) {
-    overflow: visible;
+@media (max-width: 56.25em) {
+  body {
+    overflow: scroll;
   }
-} */
+}
+
 .welcome-message {
   display: -webkit-box;
   display: -ms-flexbox;

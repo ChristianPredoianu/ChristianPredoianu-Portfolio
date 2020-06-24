@@ -1,10 +1,8 @@
-/* body {
-  overflow: hidden;
-
+body {
   @include respond(tab-port) {
-    overflow: visible;
+    overflow: scroll;
   }
-} */
+}
 
 .welcome-message {
   display: flex;
