@@ -42,7 +42,7 @@ body {
 }
 
 .swiper-container {
-  min-height: 40rem;
+  min-height: 38rem;
   width: 100%;
   -ms-grid-row: 4;
   -ms-grid-row-span: 3;
