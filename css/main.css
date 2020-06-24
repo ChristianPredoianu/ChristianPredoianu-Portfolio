@@ -28,13 +28,13 @@ $breakpoint argument choices
 
 html {
   font-size: 62.5%;
-  /*  overflow: hidden; */
+  overflow: hidden;
 }
 
 body {
   position: relative;
   height: 100vh;
-  /*   overflow: hidden; */
+  overflow: hidden;
 }
 
 body {
@@ -850,7 +850,7 @@ nav {
 }
 
 .projects-body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container-projects {
