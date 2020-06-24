@@ -850,7 +850,7 @@ nav {
 }
 
 .projects-body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container-projects {
