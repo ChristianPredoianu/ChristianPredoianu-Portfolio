@@ -186,23 +186,20 @@
   }
 
   &__logo {
-    width: 30%;
+    width: 3rem;
     filter: invert(80%) sepia(66%) saturate(3911%) hue-rotate(9deg)
       brightness(99%) contrast(102%);
     margin-top: 3rem;
 
     @include respond(tab-land) {
       margin-top: 2rem;
-      width: 25%;
     }
 
     @include respond(tab-port) {
-      width: 50%;
       margin-top: 4rem;
     }
 
     @include respond(phone) {
-      width: 20%;
       margin-top: 1.5rem;
     }
   }
