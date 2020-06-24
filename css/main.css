@@ -28,13 +28,13 @@ $breakpoint argument choices
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  /*  overflow: hidden; */
 }
 
 body {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  /*   overflow: hidden; */
 }
 
 body {
@@ -543,16 +543,13 @@ nav {
   }
 }
 
-body {
+/* body {
   overflow: hidden;
-}
 
-@media (max-width: 56.25em) {
-  body {
-    overflow: scroll;
+  @include respond(tab-port) {
+    overflow: visible;
   }
-}
-
+} */
 .welcome-message {
   display: -webkit-box;
   display: -ms-flexbox;
