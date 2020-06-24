@@ -1,5 +1,5 @@
 .swiper-container {
-  min-height: 40rem;
+  min-height: 38rem;
   width: 100%;
   grid-area: swiper;
 
@@ -189,7 +189,7 @@
     width: 3rem;
     filter: invert(80%) sepia(66%) saturate(3911%) hue-rotate(9deg)
       brightness(99%) contrast(102%);
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     @include respond(tab-land) {
       margin-top: 2rem;
