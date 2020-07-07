@@ -27,3 +27,24 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const tl = gsap.timeline();
+
+const hasPlayed = sessionStorage.getItem('projectsAnimation');
+
+if (!hasPlayed) {
+  tl.from('.swiper-container', {
+    rotate: 10,
+    x: 150,
+    y: -150,
+    duration: 2,
+    stagger: 1,
+    scale: 0,
+    opacity: 0,
+    ease: 'back',
+
+    onComplete: function () {
+      sessionStorage.setItem('projectsAnimation', true);
+    },
+  });
+}
