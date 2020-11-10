@@ -47,26 +47,32 @@
 }
 
 .slide-2 {
-  background-image: url('/assets/images/background.jpg');
+  background-image: url('/assets/images/eating.jpg');
 }
 
 .slide-3 {
-  background-image: url('/assets/images/music-player.jpg');
+  background-image: url('/assets/images/cryptocurrency.jpg');
 }
 
 .slide-4 {
-  background-image: url('/assets/images/covid.jpg');
-}
-.slide-5 {
-  background-image: url('/assets/images/quiz.jpg');
-}
-.slide-6 {
-  background-image: url('/assets/images/ceramic.jpg');
-}
-.slide-7 {
-  background-image: url('/assets/images/porsche.jpg');
+  background-image: url('/assets/images/background.jpg');
 }
 
+.slide-5 {
+  background-image: url('/assets/images/music-player.jpg');
+}
+.slide-6 {
+  background-image: url('/assets/images/covid.jpg');
+}
+.slide-7 {
+  background-image: url('/assets/images/quiz.jpg');
+}
+.slide-8 {
+  background-image: url('/assets/images/ceramic.jpg');
+}
+.slide-9 {
+  background-image: url('/assets/images/porsche.jpg');
+}
 .slide-container {
   @include flex(flex, column, center, center);
   min-height: 100%;
@@ -226,5 +232,8 @@
   @include slide-hover;
 }
 .slide-7:hover .slide-container {
+  @include slide-hover;
+}
+.slide-8:hover .slide-container {
   @include slide-hover;
 }

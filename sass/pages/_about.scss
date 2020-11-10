@@ -128,7 +128,8 @@
     font-size: 2rem;
 
     @include respond(big-desktop) {
-      font-size: 2.7rem;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
     }
 
     @include respond(tab-land) {
