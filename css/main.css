@@ -378,6 +378,13 @@ body {
   background: rgba(16, 15, 27, 0.8);
 }
 
+.slide-9:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.8);
+}
+
 nav {
   position: absolute;
   top: 5%;
