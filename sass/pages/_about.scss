@@ -1,5 +1,6 @@
 .about-body {
   overflow-y: visible;
+  min-height: 100vh;
 }
 
 .about-container {
@@ -154,6 +155,7 @@
 .technologies {
   width: 50%;
   background-color: $color-secondary;
+  min-height: 100vh;
 
   @include respond(tab-port) {
     padding-bottom: 20rem;

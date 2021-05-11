@@ -102,34 +102,38 @@ body {
 }
 
 .slide-2 {
-  background-image: url("/assets/images/eating.jpg");
+  background-image: url("/assets/images/netflix-background.jpg");
 }
 
 .slide-3 {
-  background-image: url("/assets/images/cryptocurrency.jpg");
+  background-image: url("/assets/images/eating.jpg");
 }
 
 .slide-4 {
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("/assets/images/cryptocurrency.jpg");
 }
 
 .slide-5 {
-  background-image: url("/assets/images/music-player.jpg");
+  background-image: url("/assets/images/background.jpg");
 }
 
 .slide-6 {
-  background-image: url("/assets/images/covid.jpg");
+  background-image: url("/assets/images/music-player.jpg");
 }
 
 .slide-7 {
-  background-image: url("/assets/images/quiz.jpg");
+  background-image: url("/assets/images/covid.jpg");
 }
 
 .slide-8 {
-  background-image: url("/assets/images/ceramic.jpg");
+  background-image: url("/assets/images/quiz.jpg");
 }
 
 .slide-9 {
+  background-image: url("/assets/images/ceramic.jpg");
+}
+
+.slide-10 {
   background-image: url("/assets/images/porsche.jpg");
 }
 
@@ -379,6 +383,13 @@ body {
 }
 
 .slide-9:hover .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(16, 15, 27, 0.8);
+}
+
+.slide-10:hover .slide-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,6 +1062,7 @@ nav {
 
 .about-body {
   overflow-y: visible;
+  min-height: 100vh;
 }
 
 .about-container {
@@ -1254,6 +1266,7 @@ nav {
 .technologies {
   width: 50%;
   background-color: #100f1b;
+  min-height: 100vh;
 }
 
 @media (max-width: 56.25em) {
